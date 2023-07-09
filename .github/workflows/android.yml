@@ -26,8 +26,6 @@ jobs:
       with:
         # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0
         maven-version: 3.0.5
-    - name: init mvn
-      run: mvn install -P 4.1 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
